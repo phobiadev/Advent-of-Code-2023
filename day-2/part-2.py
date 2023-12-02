@@ -1,7 +1,6 @@
 # (see part 1)
 
 lines = open("input.txt").readlines()
-lines = ["".join(line.split(": ")[1:]) for line in lines]
 
 colours = ["red","green","blue"]
 
