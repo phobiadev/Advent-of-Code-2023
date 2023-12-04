@@ -3,7 +3,7 @@ lines = [line.split(":")[1].strip().split(" ") for line in lines]
 
 lines = [list(filter(lambda x: x != "",line)) for line in lines]
 
-copies = [1 for i in range(len(lines))]
+copies = [1]*len(lines)
 
 for i in range(len(lines)):
     duplicates = len(lines[i])-len(set(lines[i]))
