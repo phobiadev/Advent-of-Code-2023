@@ -1,5 +1,3 @@
-# (see part 1)
-
 lines = open("input.txt").readlines()
 
 colours = ["red","green","blue"]
