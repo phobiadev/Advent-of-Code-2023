@@ -1,6 +1,5 @@
 lines = open("input.txt").readlines()
 
-total = 0
 nums = ["one","two","three","four","five","six","seven","eight","nine"]
 
 def firstDigit(line):
@@ -23,9 +22,9 @@ def lastDigit(line):
                 if line[i-len(num)+1:i+1] == num:
                     return str(j + 1)
 
+total = 0
 
 for line in lines:
     total += int(firstDigit(line) + lastDigit(line))
-
 
 print(total)

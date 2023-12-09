@@ -1,18 +1,13 @@
 lines = open("input.txt").readlines()
 
-total = 0
-
 def firstDigit(line):
     for char in line:
         if char.isnumeric():
             return char
 
-def lastDigit(line):
-    for char in line[::-1]:
-        if char.isnumeric():
-            return char
+total = 0
 
 for line in lines:
-    total += int(firstDigit(line) + lastDigit(line))
+    total += int(firstDigit(line) + firstDigit(line[::-1]))
 
 print(total)
